@@ -1,12 +1,19 @@
 <template>
-  <div> 
-    <h1> 页面测试一 </h1>
+  <div id='main'> 
+    <Header />
   </div>
 </template>
 
-<script>
-export default {
 
+
+<script>
+import Header from '@/components/header'
+
+export default {
+  name : 'Page1',
+  components : {
+    Header
+  }
 }
 </script>
 
