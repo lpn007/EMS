@@ -115,25 +115,26 @@ export default {
 
 <style scoped>
   button {
-    margin: 2px 10px 2px 0px;      
+    margin: 2px 10px 2px 0px;     
   }
-  /* button .asd{
-    width: 200px;   
-  } */
-  div #t0 {
-    margin: 15px 0px 5px 15px;
+  .asd{
+    width: 150px; 
+    height: 40px;
+  } 
+  #t0 {
+    margin: 15px 0px 5px 20px;
     display: flex;
     align-item: flex-start;
     flex-wrap: wrap;
   }
-  div .t1 {
-    margin: 10px 0px 5px 15px;
+  .t1 {
+    margin: 10px 0px 5px 0px;
     display: flex;
     align-item: flex-start;
     flex-wrap: wrap;
   }
   .space-align-container {
-    margin:10px 0px 5px 15px;
+    margin:10px 0px 5px 0px;
     display: flex;
     align-item: flex-start;
     flex-wrap: wrap;
