@@ -8,7 +8,10 @@ import {
   Menu,
   Radio,
   Space,
-  Icon
+  Icon,
+  Breadcrumb,
+  LocaleProvider,
+  Calendar
 } from 'ant-design-vue'
 
 Vue.use(Button)
@@ -17,7 +20,9 @@ Vue.use(Menu)
 Vue.use(Radio)
 Vue.use(Space)
 Vue.use(Icon)
-
+Vue.use(Breadcrumb)
+Vue.use(LocaleProvider)
+Vue.use(Calendar)
 Vue.config.productionTip = false
 
 new Vue({

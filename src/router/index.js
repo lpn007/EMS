@@ -9,7 +9,11 @@ Vue.use(VueRouter)
 const routes = [
   page1Router,
   page2Router,
-  page3Router
+  page3Router,
+  {
+    path:"/*",
+    redirect:'/page3'
+  }
 ]
 
 const router = new VueRouter({
