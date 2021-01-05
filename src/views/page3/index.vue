@@ -1,37 +1,44 @@
 <template>
   <div style="margin: 0px">
-    <a-layout id="components-layout-demo-top-side">
-      <a-layout-header class="header" style="background: rgb(200, 233, 255)">
-        <div class="logo" />
+    <a-layout id="components-layout-demo-top-side" style='margin:0px'>
+      <a-layout-header class="header" style="background:#445577 ;display: flex;">
+        <div class="logo" >
+            <a-icon type="bank" />
+        </div>
+        <div id='sysname'>基建管理</div>
         <a-menu
           theme="light"
           mode="horizontal"
-          :default-selected-keys="['2']"
+          :default-selected-keys="['1']"
           :style="{ lineHeight: '64px' }"
           style="background: rgb(200, 233, 255)"
         >
           <a-menu-item key="1" > 
-            <!-- <router-link tag='div' :to="m1"> -->
-              <a-icon type="bank" />
+            <router-link to="/page3/m1">
+              <a-icon type="home" />
                 主 页         
-            <!-- </router-link>               -->
+            </router-link>              
           </a-menu-item>
           <a-menu-item key="2">
             <a-icon type="database" />
              项 目 
             </a-menu-item>
           <a-menu-item key="3">
+            <a-icon type="file-zip" />
+             资 料 
+          </a-menu-item>
+          <a-menu-item key="4">
             <a-icon type="setting" />
              系 统 
             </a-menu-item>
         </a-menu>
       </a-layout-header>
-      <a-layout-content style="padding: 0 30px">
-        <a-breadcrumb style="margin: 16px 0">
+      <a-layout-content style="padding: 20px">
+        <!-- <a-breadcrumb style="margin: 16px 0">rgb(200, 233, 255)
           <a-breadcrumb-item>Home</a-breadcrumb-item>
           <a-breadcrumb-item>List</a-breadcrumb-item>
           <a-breadcrumb-item>App</a-breadcrumb-item>
-        </a-breadcrumb>
+        </a-breadcrumb> -->
         <!-- <a-layout style="padding: 24px 0; background: #fff">
           <a-layout-sider width="200" style="background: #fff">
             <a-menu
@@ -72,24 +79,45 @@
         </keep-alive>
       </a-layout-content>
       <a-layout-footer style="text-align: center">
-        Ant Design ©2018 Created by Ant UED
+        基建管理平台 ©2021 Created by LPN
       </a-layout-footer>
     </a-layout>
   </div>
 </template>
 
+
 <script>
+import SysSvg from '@/assets/sys.svg'
+
 export default {
   name: "page3",
-};
+  components:{
+    SysSvg,
+  },
+}
 </script>
 
 <style scoped>
 #components-layout-demo-top-side .logo {
-  width: 120px;
-  height: 31px;
-  background: rgba(255, 255, 255, 0.2);
-  margin: 16px 28px 16px 0;
+  width: 45px;
+  height: 45px;
+  //background: rgba(241, 154, 40, 0.384);
+  margin: 2px 12px 0px 12px;
   float: left;
+  font: 40px sans-serif;
+  color:#af6504
+}
+.ant-layout-header {
+    height: 64px;
+    padding: 0px 50px 50px 20px;
+    line-height: 64px;
+    background: #001529;
+}
+#sysname{
+  font:bold 30px/40px arial,sans-serif;  
+  line-height: 40px;
+  margin-top: 13px;
+  margin-right: 50px;
+  color:  #038f0a
 }
 </style>

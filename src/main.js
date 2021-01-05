@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+
 import {
   Button,
   Layout,
@@ -23,6 +24,7 @@ Vue.use(Icon)
 Vue.use(Breadcrumb)
 Vue.use(LocaleProvider)
 Vue.use(Calendar)
+
 Vue.config.productionTip = false
 
 new Vue({
