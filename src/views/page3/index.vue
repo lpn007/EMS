@@ -11,7 +11,7 @@
           mode="horizontal"
           :default-selected-keys="['1']"
           :style="{ lineHeight: '64px' }"
-          style="background: rgb(200, 233, 255)"
+          style="background: #445577"
         >
           <a-menu-item key="1" > 
             <router-link to="/page3/m1">
@@ -105,7 +105,7 @@ export default {
   margin: 2px 12px 0px 12px;
   float: left;
   font: 40px sans-serif;
-  color:#af6504
+  color:#ac6904
 }
 .ant-layout-header {
     height: 64px;
@@ -114,10 +114,55 @@ export default {
     background: #001529;
 }
 #sysname{
-  font:bold 30px/40px arial,sans-serif;  
+  font:30px/40px arial,sans-serif;  
   line-height: 40px;
   margin-top: 13px;
   margin-right: 50px;
-  color:  #038f0a
+  color:  #1890ff
 }
+
+.ant-menu-horizontal{
+    white-space: nowrap;
+    border: 0;
+    /* border-bottom: 1px solid #e8e8e8; */
+    box-shadow: none;
+    color: #ffffff;
+}
+
+.ant-menu-horizontal > .ant-menu-item > a {
+    display: block;
+    color: #ffffff;
+}
+
+.ant-menu-horizontal > .ant-menu-item-active {
+    color:  #77fa6b;
+    border-bottom: 4px solid #77fa6b;
+
+}
+
+.ant-menu-horizontal> .ant-menu-item-selected{
+    color: #f8990b;
+    border-bottom: 4px solid #f8990b;
+
+}
+
+.ant-menu-horizontal > .ant-menu-item-selected > a {
+    color: #f8990b;    
+
+}
+
+.ant-menu-item-selected > a:hover {
+    color:  #77fa6b;
+
+}
+
+.ant-menu-item-active > a:hover {
+    color:  #77fa6b;
+
+}
+
+
+
+
+
 </style>
