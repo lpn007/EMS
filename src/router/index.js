@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import page1Router from './page1'
 import page2Router from './page2'
 import page3Router from './page3'
+import loginRouter from './login';
 
 Vue.use(VueRouter)
 
@@ -10,9 +11,10 @@ const routes = [
   page1Router,
   page2Router,
   page3Router,
+  loginRouter,
   {
     path:"/*",
-    redirect:'/page3'
+    redirect:'@/components/login'
   }
 ]
 

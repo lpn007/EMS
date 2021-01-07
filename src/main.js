@@ -2,6 +2,8 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+import axios from 'axios'
+
 
 import {
   Button,
@@ -14,6 +16,7 @@ import {
   LocaleProvider,
   Calendar
 } from 'ant-design-vue'
+import vueConfig from './vue.config'
 
 Vue.use(Button)
 Vue.use(Layout)
@@ -25,6 +28,7 @@ Vue.use(Breadcrumb)
 Vue.use(LocaleProvider)
 Vue.use(Calendar)
 
+//vue.prototype.$ajax = axios
 Vue.config.productionTip = false
 
 new Vue({
