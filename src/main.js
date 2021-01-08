@@ -1,8 +1,9 @@
-import Vue from 'vue'
-import App from './App.vue'
-import router from './router'
-import store from './store'
-import axios from 'axios'
+import Vue from 'vue';
+import App from './App.vue';
+import router from './router';
+import store from './store';
+import axios from 'axios';
+import Vuex from 'vuex';
 
 
 import {
@@ -14,7 +15,11 @@ import {
   Icon,
   Breadcrumb,
   LocaleProvider,
-  Calendar
+  Calendar,
+  Input,
+  Tooltip,
+  Form,
+  Checkbox
 } from 'ant-design-vue'
 import vueConfig from './vue.config'
 
@@ -27,6 +32,11 @@ Vue.use(Icon)
 Vue.use(Breadcrumb)
 Vue.use(LocaleProvider)
 Vue.use(Calendar)
+Vue.use(Input)
+Vue.use(Tooltip)
+Vue.use(Form)
+Vue.use(Checkbox)
+
 
 //vue.prototype.$ajax = axios
 Vue.config.productionTip = false
